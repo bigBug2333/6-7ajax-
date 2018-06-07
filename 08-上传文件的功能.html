@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <!-- 1. method必须是post请求 -->
+  <!-- 2. 要上传文件，必须要指定： enctype="multipart/form-data" -->
+  <!-- 3. 需要给input指定一个name属性，后端才能获取到 -->
+  <form action="08-file.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="img1">
+    <input type="file" name="img2">
+    <input type="submit" value="提交">
+  </form>
+  
+</body>
+</html>

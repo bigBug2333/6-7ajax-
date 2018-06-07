@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    form {
+        width: 400px;
+        margin: 0 auto
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+    <!-- 表单的作用： 收集用户的输入的信息，发送给后台 -->
+    <!-- action: 设置一个表单提交的地址 -->
+    <!-- method=":指定表单的请求方式，默认是get -->
+    <form action="06-form.php" method="get">
+
+        <!-- name:用户提交给后台时，后台获取的名字 -->
+        用户名：<input type="text" name="username">
+        密码：<input type="password" name="password">
+        <input type="submit" value="提交">
+
+    </form>
+
+</body>
+</html>
